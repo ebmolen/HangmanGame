@@ -6,8 +6,8 @@ OBJECTS = random.o randword.o main.o hangman.o
 FLAGS = -std=c++20
 SOURCE = $(wildcard *.cpp)
 
-Problem5: $(OBJECTS)
-	$(CXX) $(FLAGS) $(OBJECTS) -o Problem5
+main: $(OBJECTS)
+	$(CXX) $(FLAGS) $(OBJECTS) -o main
 
 # $< refers to the first prequisite
 # $@ refers to the target
