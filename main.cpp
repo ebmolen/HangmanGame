@@ -1,5 +1,5 @@
 /*
- * File: Problem5.cpp
+ * File:  main.cpp
  * ------------------
  * This program implements a game of hangman!
  *
