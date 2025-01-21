@@ -1,8 +1,8 @@
-#Makefile for Project#1, Problem#5
+#Makefile for Hangman Game
 
 
 CXX = g++
-OBJECTS = random.o randword.o Problem5.o hangman.o
+OBJECTS = random.o randword.o main.o hangman.o
 FLAGS = -std=c++20
 SOURCE = $(wildcard *.cpp)
 
@@ -14,11 +14,11 @@ Problem5: $(OBJECTS)
 %.o: %.cpp %.h
 	$(CXX) -c $< -o $@
 
-run: Problem5
-	./Problem5
+run: main
+	./main
 
 echo:
 	echo $(SOURCE)
 
 clean: 
-	rm -f *.o Problem5
+	rm -f *.o main
